@@ -29,11 +29,12 @@ const App = () => {
           theme="light"
           breakpoint="lg"
           collapsedWidth="0"
+          style={{ position: "relative" }}
         >
           <Menu
             mode="inline"
             defaultSelectedKeys={["dashboard"]}
-            style={{ height: "100%", borderRight: 0 }}
+            style={{ height: "calc(100% - 50px)", borderRight: 0 }}
           >
             <Menu.Item
               key="dashboard"
@@ -113,6 +114,7 @@ const App = () => {
               width: "100%",
               marginTop: 30,
             }}
+            className="ground_img"
           >
             <img src={ground} alt="gound" style={{ width: 200, height: 50 }} />
           </div>

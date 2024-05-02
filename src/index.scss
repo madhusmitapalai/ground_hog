@@ -216,6 +216,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .ground_img {
+    display: none;
+  }
 }
 
 @media (min-width: 200px) and (max-width: 450px) {
@@ -239,9 +242,12 @@ body {
     border-inline-start: 0;
     position: absolute;
     top: 10px;
-    left: 287px;
+    left: 320px;
   }
   .ant-input-group-wrapper {
+    display: none;
+  }
+  .ground_img {
     display: none;
   }
 }
