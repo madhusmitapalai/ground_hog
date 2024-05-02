@@ -22,7 +22,7 @@ const Topbar = () => {
           <h3>Managgement System</h3>
         </div>
       </div>
-      <div>
+      <div className="search">
         <Search
           placeholder="Search here"
           onSearch={handleSearch}

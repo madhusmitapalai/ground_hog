@@ -25,11 +25,7 @@ const App = () => {
       <Layout>
         <Sider
           width={200}
-          style={{
-            background: "#fff",
-            paddingTop: "20px",
-            position: "relative",
-          }}
+          className="sidebar"
           theme="light"
           breakpoint="lg"
           collapsedWidth="0"
