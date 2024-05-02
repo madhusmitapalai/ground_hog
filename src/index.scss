@@ -198,14 +198,14 @@ body {
 }
 //media
 
-@media (max-width: 768px) {
+@media (min-width: 455px) and (max-width: 768px) {
   .search {
     display: none;
   }
   .ant-layout-header {
     color: rgba(0, 0, 0, 0.88);
     background: #001529;
-    overflow-y: scroll;
+    // overflow-y: scroll;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -218,30 +218,30 @@ body {
   }
 }
 
-@media (max-width: 380px) {
+@media (min-width: 200px) and (max-width: 450px) {
   .search {
     display: block;
   }
-  .ant-layout-header {
-    color: rgba(0, 0, 0, 0.88);
-    background: #001529;
-    overflow-y: scroll;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 0px;
-    height: 300px;
-  }
-  .header_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+  .sync_container {
+    display: none !important;
   }
 
   .header_container .sync_container {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    color: grey;
+    overflow: hidden;
+  }
+  .ant-layout .ant-layout-sider-light .ant-layout-sider-zero-width-trigger {
+    color: rgba(0, 0, 0, 0.88);
+    background: #ffffff;
+    border: 1px solid #f5f5f5;
+    border-inline-start: 0;
+    position: absolute;
+    top: 10px;
+    left: 287px;
+  }
+  .ant-input-group-wrapper {
+    display: none;
   }
 }
