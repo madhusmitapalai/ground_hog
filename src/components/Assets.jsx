@@ -33,7 +33,7 @@ const Assets = () => {
       title: "",
       key: "action",
       render: () => (
-        <a href="#">
+        <a href="##">
           <div style={{ display: "flex", flexDirection: "column" }}>
             <span style={{ fontSize: 10, fontWeight: 700 }}>.</span>
             <span style={{ fontSize: 10, fontWeight: 700, marginTop: "-10px" }}>
